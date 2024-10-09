@@ -56,30 +56,30 @@ app.get("/createuser/", (requset, response) => {
     response.sendFile("createuser.html", {root:__dirname})
 })
 
-app.get('/:id', async (request, responce) => {
-    const {id} = request.params;
-    // console.log(id)
-    const getNameQuery = 
-//     `CREATE TABLE user (
-//         id INTEGER
-//         name VARCHAR(200),
-//         user_name VARCHAR(200),
-//         password VARCHAR(200)
-//       );
-// `
+// app.get('/:id', async (request, responce) => {
+//     const {id} = request.params;
+//     // console.log(id)
+//     const getNameQuery = 
+// //     `CREATE TABLE user (
+// //         id INTEGER
+// //         name VARCHAR(200),
+// //         user_name VARCHAR(200),
+// //         password VARCHAR(200)
+// //       );
+// // `
 
-    `
-        SELECT 
-            * 
-        FROM 
-            USER
-            ;`;
+//     `
+//         SELECT 
+//             * 
+//         FROM 
+//             USER
+//             ;`;
 
-        // WHERE 
-        //     ID = ${id}
-    const name = await db.all(getNameQuery);
-    responce.send(name);
-})
+//         // WHERE 
+//         //     ID = ${id}
+//     const name = await db.all(getNameQuery);
+//     responce.send(name);
+// })
 
 app.post('/login/', async(request, response) => {
     const {username, password} = request.body;
