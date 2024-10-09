@@ -167,7 +167,7 @@
             <div class="btns">
                 <button class="sub_btn" onclick="get()">Submit</button>
                 <!-- <a class="ancherEl" href="http://localhost:3002/createuser/">Create an account</a> -->
-                <a class="ancherEl" href="https://4c29-110-235-224-7.ngrok-free.app/createuser/">Create an account</a>
+                <a class="ancherEl" href="https://test-1-riqt.onrender.com/createuser/">Create an account</a>
             </div>
         </div>
     </div>
@@ -238,6 +238,7 @@
 
             let options = {
                 method: "POST",
+                
                 headers: {
                     "Content-Type": "application/json"
                     // 'Authorization': `Bearer ${token}`,
@@ -250,7 +251,7 @@
             console.log(data)
             console.log(options.body)
                 
-            fetch('https://4c29-110-235-224-7.ngrok-free.app/login/', options)
+            fetch('https://test-1-riqt.onrender.com/login/',{mode: 'no-cors'}, options)
             // fetch('http://localhost:3002/user/', options)
             .then(function(response) {
                 return response.json();

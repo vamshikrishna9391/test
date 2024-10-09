@@ -150,7 +150,7 @@ app.post("/user/", async (request, response) => {
 
 // TO KNOW THE NO. OF TABLE IN A DB USE QUARY
 
-// sqlite> .tables
+// sqlite> .tables                                      
 // user             user_login_info
 
 // sqlite> PRAGMA TABLE_INFO(user_login_info);
